@@ -1,0 +1,36 @@
+{
+  "name": "mock-trim3",
+  "version": "0.0.0",
+  "description": "Hello Expo!",
+  "author": null,
+  "main": "main.js",
+  "scripts": {
+    "test": "node node_modules/jest/bin/jest.js"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@expo/ex-navigation": "~2.10.0",
+    "@expo/samples": "~1.0.3",
+    "axios": "^0.16.1",
+    "expo": "16.0.0",
+    "react": "16.0.0-alpha.6",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-16.0.0.tar.gz",
+    "react-native-communications": "^2.2.1",
+    "react-native-flexi-radio-button": "^0.2.1",
+    "react-native-floating-label-text-input": "^0.1.4",
+    "react-native-keyboard-aware-scroll-view": "^0.2.9",
+    "react-native-modal": "^2.3.2",
+    "react-native-simple-radio-button": "^2.5.0-alpha.1",
+    "react-native-stripe-api": "0.0.6",
+    "reactotron-react-native": "^1.10.0",
+    "redux": "^3.6.0",
+    "redux-promise-middleware": "^4.2.0",
+    "socket.io-client": "^2.0.3",
+    "tipsi-stripe": "^3.2.0"
+  },
+  "devDependencies": {
+    "jest-expo": "0.4.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "host": "ds139781.mlab.com",
+    "port": 39781,
+    "database": "heroku_2fpl0khw",
+    "username": "heroku_2fpl0khw",
+    "password": "kqts8n11vkihg2hbl19iq2cbku",
+    "name": "mongodb",
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models",
+      "loopback-passport-jwt/server/models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins",
+      "loopback-passport-jwt/server/mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mongodb"
+  },
+  "AccessToken": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongodb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "customer": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "barber": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "transaction": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "trimadmin": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "push": {
+    "public": true,
+    "dataSource": "push"
+  }
+
+}

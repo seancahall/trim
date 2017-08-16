@@ -1,0 +1,39 @@
+- When switch is toggled
+- It calls this.toggleAvailability
+    - (this.ta is found in mapDispatchToProps)
+- this.ta dispatches the action created by updateBarber
+- updateBarber is found in ./actions/currentBarber
+- it returns an action
+- the action is named UPDATE_BARBER
+- the payload is the promise returned from api
+- the api calls loopback
+
+- later, the currentBarberReducer creates a new version of the store with UPDATE_BARBER_FULFILLED action
+- the reducer saves the currentBarber from update
+- the BarberToggleScreen component is completely re-rendered
+- it will map state to props
+    - making the new current barber available in component props
+- 
+
+- in ./api/barber.js
+  create a function called updateBarber
+
+  updateBarber(barber) {
+    // call the api via PUT using axios
+    // hint: axios.put('url/' + barber._id, barber);
+  }
+
+- create an action in ./actions/barberActions.js
+
+  export featureunction updateBarber(barber) {
+    // return an action (see other action creators in this file for examples)
+  }
+
+- make a new barberAvailabilityReducer.js
+- add the reducer to combineReducers in ./reducers/index.js
+
+- create a reducer that handles the promise actions from barberActions
+
+- handle the actions in ./reducers/barberAvailabilityReducer.js
+
+  (see ./reducers/mapReducer.js for an example of how to handle promise actions)

@@ -1,0 +1,86 @@
+{
+  "name": "barber",
+  "plural": "barbers",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "barberPhone": {
+      "type": "string"
+    },
+    "address1": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "zipCode": {
+      "type": "string"
+    },
+    "profilePic": {
+      "type": "string"
+    },
+    "barberLicenseNo": {
+      "type": "string"
+    },
+    "barberLocation": {
+      "type": "geopoint"
+    },
+    "status": {
+      "type": "array",
+      "default": "[\"Active\",\"Pending\",\"Suspended\"]"
+    },
+    "isAvailable": {
+      "type": "boolean",
+      "default": false
+    },
+    "specialty": {
+      "type": "array",
+      "default": "[\"Haircut\",\"Trim\",\"Shave\"]"
+    },
+    "haircut": {
+      "type": "number",
+      "default": 100
+    },
+    "haircutAndBeard": {
+      "type": "number",
+      "default": 150
+    }
+
+  },
+  "validations": [],
+  "relations": {
+    "transactions": {
+      "type": "hasMany",
+      "model": "transaction",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "find"
+    }
+  ],
+  "methods": {}
+}

@@ -1,0 +1,60 @@
+{
+  "name": "transaction",
+  "plural": "transactions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "address1": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "zipCode": {
+      "type": "string"
+    },
+    "location": {
+      "type": "geopoint"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "noteToBarber": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "commentDate": {
+      "type": "date"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "ratingDate": {
+      "type": "date"
+    },
+    "transactionDate": {
+      "type": "date"
+    },
+    "transactionNote": {
+      "type": "string"
+    },
+    "orderDetail": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
